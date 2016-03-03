@@ -1,0 +1,152 @@
+html body h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    color:#32A1B7;
+	text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+#liens, #contact {
+    text-align: center;
+}
+#emailForm{
+    margin: auto;
+    max-width: 350px;
+    padding-top: 25px;
+    font-family: 'Lato';
+}
+#emailForm #name, #email, #submit, #message{
+    border: 2px solid #32A1B7;
+}
+
+html *{
+    box-sizing: border-box;
+}
+.active {
+    color:red !important;
+}
+.error {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.submissionMessage {
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    display: block;
+    box-shadow: 0 0 2px white;
+    width: 60%;
+}
+#Logo {
+    float: right;
+    width: 150px;
+    height: 32px;
+    padding-right: 25px;
+
+}
+a.active-tab {
+    background: blue;
+    color: white;
+}
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from    { transform:translateY(150%); }
+    to      { transform: translateY(0); }
+}
+@keyframes slideOutUp {
+    from    { transform:translateY(0); }
+    to      { transform: translateY(-150%); }
+}
+html body .page {
+	width:100%;
+    position: absolute;
+}
+
+.ng-enter           { animation: slideInRight 0.5s both ease-in; z-index: 1000; }
+.ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 1100; }
+
+.CV .ng-enter           { animation: slideInUp 0.5s both ease-in; z-index: 1000; }
+.CV .ng-leave           { animation: slideOutUp 0.5s both ease-in; z-index: 1100; }
+
+#MyFace {
+    float: left;
+    border: 2px solid #32A1B7;
+    margin: 0px 15px 10px 15px;
+    box-shadow: 10px 10px 5px #888888;
+	text-align:center;
+}
+.White {
+    color:white !important;
+	border:2px solid #32A1B7;
+	background-color:RGBA(0,0,0,0.5);
+}
+.Blue {
+    color:black !important;
+    background-color:RGBA(255,255,255,0.5);
+	border:2px solid #F1F1F1;
+}
+.White, .Blue{
+    position: absolute;
+	color:white;
+	width:90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 20px 20px 20px;
+	margin-left:5%;
+}
+#navButtons {
+    position: absolute;
+    bottom: 25px;
+    right:25px;
+    border: 2px solid white;
+    height: 100px;
+	padding:10px;
+    width:100px;
+}
+#navButtons #upButton, #rightButton, #leftButton, #downButton{
+	width:25px;
+	height:25px;
+}
+#navButtons #upButton, #downButton {
+	margin-left:25px;
+}
+#navButtons #rightButton {
+	margin-left:20px;
+}
+#navButtons #leftButton {
+}
+.disableButton{
+    background-color: black;
+}

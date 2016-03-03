@@ -1,0 +1,83 @@
+nav ul {
+    list-style: none;
+    padding: 2px;
+}
+nav ul li {
+    text-align: right;
+    font-size: 1.4rem;
+    padding: 0px 10px 0px 0px;
+    margin-top: 0px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: midnightblue;
+}
+nav ul li a::after {
+    content: " <";
+}
+nav {
+    margin:0px;
+    border: 2px solid midnightblue;
+    padding: 5px;
+    background-color:white;
+    position: fixed;
+    width: 100%;
+}
+html body #links{
+    margin: 0px;
+    padding:0px;
+    position: absolute;
+    right: 4px;
+    top:32px;
+    border: 2px solid midnightblue;
+    background-color: RGBA(255,255,255,0.95);
+    font-family: 'Lato';
+    z-index: 2000;
+}
+#Logo {
+    display: none;
+}
+#mobileLogo{
+    float: left;
+}
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+@keyframes slideOutRight {
+    from    { transform:translateX(0); }
+    to      { transform: translateX(100%); }
+}
+.ng-hide-add         { animation: slideOutRight 0.5s both ease-in; z-index: 1000; }
+.ng-hide-remove       { animation: slideInRight 0.5s both ease-in; z-index: 1000; }
+#menuBtn {
+    float: right;
+    background-image: url("../inc/images/menu.png");
+    background-size: 32px 32px;
+    background-color:RGBA(0,0,0,0);
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+    margin: -5px 0px -5px 0px;
+    border: none;
+}
+body {
+    width: 100%;
+    margin: auto;
+    /*background-image:url(../inc/images/background1.jpg);*/
+}
+.MainContent{
+    position: fixed;
+    top:32px;
+    bottom: 0px;
+    border: 2px solid midnightblue;
+    background-color: RGBA(255,255,255,0.6);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0px;
+    z-index: -10;
+}
+.Liens {
+    text-align: center;
+}
